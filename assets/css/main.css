@@ -2251,6 +2251,9 @@ input, select, textarea {
 	span.image.icon {
 		cursor: default;
 	}
+	.img-rounded {
+		border-radius: 15px;
+	}
 
 /* Icon */
 
