@@ -143,7 +143,6 @@ input, select, textarea {
 		line-height: 1.75em;
 		margin-bottom: 1em;
 		text-transform: uppercase;
-		text-align: center;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2029,10 +2028,6 @@ input, select, textarea {
 				header.major.last h2 {
 					margin-bottom: 1em;
 				}
-
-	footer {
-		text-align: center;
-	}
 
 		footer.major {
 			border-bottom-width: 1px;
