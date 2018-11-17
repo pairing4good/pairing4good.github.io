@@ -2779,11 +2779,11 @@ input, select, textarea {
 			margin: 0.25em 0 0 0;
 		}
 
-		/* Header */
+		/* Header 2 */
 
-	#header2 {
+	#headerTwo {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header2.jpg");
+		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/headerTwo.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -2793,7 +2793,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#header2:before, #header2:after {
+		#headerTwo:before, #headerTwo:after {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
 			left: 50%;
@@ -2802,44 +2802,44 @@ input, select, textarea {
 			z-index: 0;
 		}
 
-		#header2:before {
+		#headerTwo:before {
 			height: calc(100% - 50px);
 			opacity: 0.15;
 			top: 0;
 		}
 
-		#header2:after {
+		#headerTwo:after {
 			bottom: 0;
 			height: 50px;
 		}
 
-		#header2 a {
+		#headerTwo a {
 			border-bottom-color: rgba(255, 255, 255, 0.35);
 			color: rgba(255, 255, 255, 0.8);
 		}
 
-			#header2 a:hover {
+			#headerTwo a:hover {
 				border-bottom-color: transparent;
 				color: #42A5F5;
 			}
 
-		#header2 strong, #header2 b {
+		#headerTwo strong, #headerTwo b {
 			color: #ffffff;
 		}
 
-		#header2 h1, #header2 h2, #header2 h3, #header2 h4, #header2 h5, #header2 h6 {
+		#headerTwo h1, #headerTwo h2, #headerTwo h3, #headerTwo h4, #headerTwo h5, #headerTwo h6 {
 			color: #ffffff;
 		}
 
-		#header2 input[type="submit"],
-		#header2 input[type="reset"],
-		#header2 input[type="button"],
-		#header2 .button {
+		#headerTwo input[type="submit"],
+		#headerTwo input[type="reset"],
+		#headerTwo input[type="button"],
+		#headerTwo .button {
 			background: #ffffff;
 			color: #544d55;
 		}
 
-		#header2 .logo {
+		#headerTwo .logo {
 			background: #42A5F5;
 			border-radius: 100%;
 			color: #ffffff;
@@ -2853,17 +2853,17 @@ input, select, textarea {
 			width: 2.35em;
 		}
 
-			#header2 .logo.fa-paper-plane-o:before {
+			#headerTwo .logo.fa-paper-plane-o:before {
 				left: -0.075em;
 				position: relative;
 			}
 
-		#header2 h1 {
+		#headerTwo h1 {
 			font-size: 2.5em;
 			margin: 0;
 		}
 
-		#header2 p {
+		#headerTwo p {
 			font-size: 1.5em;
 			line-height: 1.5em;
 			margin: 0.25em 0 0 0;
