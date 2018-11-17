@@ -3199,7 +3199,7 @@ input, select, textarea {
 	@media screen and (max-width: 840px) {
 
 		/* Section/Article */
-
+/*
 			header.major {
 				padding-left: 2em;
 				padding-right: 2em;
@@ -3209,7 +3209,7 @@ input, select, textarea {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
-
+*/
 	}
 
 /* Mobile */
