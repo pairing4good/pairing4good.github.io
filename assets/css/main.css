@@ -3435,12 +3435,12 @@ input, select, textarea {
 				}
 
 		/* Header */
-
+/*
 			#header {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
-
+*/
 				#header br {
 					display: none;
 				}
