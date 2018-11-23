@@ -21,6 +21,24 @@
 					"provider": "Pairing4Good"
 			}
 		</script>
+
+		<script>
+			/**
+			* Function that tracks a click on an outbound link in Analytics.
+			* This function takes a valid URL string as an argument, and uses that URL string
+			* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+			* using 'navigator.sendBeacon' in browser that support it.
+			*/
+			var trackOutboundLink = function(url) {
+				gtag('event', 'click', {
+				'event_category': 'outbound',
+				'event_label': url,
+				'transport_type': 'beacon',
+				'event_callback': function(){document.location = url;}
+				});
+			}
+		</script>
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -68,12 +86,20 @@
 					</header>
 					<section>
 						<ul class="actions special">
-							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52181838283" target="_blank" class="button">Dec 5th 5:30-7PM</a></li>
-							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749106999" target="_blank" class="button">Dec 11th 5:30-7PM</a></li>
+							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52181838283" 
+								target="_blank" class="button" 
+								onclick="trackOutboundLink('https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52181838283'); return false;">Dec 5th 5:30-7PM</a></li>
+							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749106999" 
+								target="_blank" class="button" 
+								onclick="trackOutboundLink('https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749106999'); return false;">Dec 11th 5:30-7PM</a></li>
 						</ul>
 						<ul class="actions special">
-							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749132074" target="_blank" class="button">Dec 19th 5:30-7PM</a></li>
-							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749135083" target="_blank" class="button">Jan 2th 5:30-7PM</a></li>
+							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749132074" 
+								target="_blank" class="button" 
+								onclick="trackOutboundLink('https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749132074'); return false;">Dec 19th 5:30-7PM</a></li>
+							<li><a href="https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749135083" 
+								target="_blank" class="button" 
+								onclick="trackOutboundLink('https://www.eventbrite.com/e/pairing4good-coding-academy-information-meeting-tickets-52749135083'); return false;">Jan 2th 5:30-7PM</a></li>
 						</ul>
 					</section>
 				</div>
@@ -92,7 +118,8 @@
 							Scholarships/Discounts. 
 						</p>
 						<ul class="actions special">
-							<li><a href="https://goo.gl/forms/t9VwIzsonaa6z1Vm2" target="_blank" class="button">Apply</a></li>
+							<li><a href="https://goo.gl/forms/t9VwIzsonaa6z1Vm2" target="_blank" class="button" 
+								onclick="trackOutboundLink('https://goo.gl/forms/t9VwIzsonaa6z1Vm2'); return false;">Apply</a></li>
 						</ul>
 						<hr/>
 						<header>
@@ -103,7 +130,8 @@
 							ethnic minority groups underrepresented in tech.
 						</p>
 						<ul class="actions special">
-							<li><a href="https://goo.gl/forms/xnsMauog6BrAZwU02" target="_blank" class="button">Apply</a></li>
+							<li><a href="https://goo.gl/forms/xnsMauog6BrAZwU02" target="_blank" class="button" 
+								onclick="trackOutboundLink('https://goo.gl/forms/xnsMauog6BrAZwU02'); return false;">Apply</a></li>
 						</ul>
 						<hr/>
 						<header>
@@ -114,7 +142,8 @@
 							Registered students may submit multiple valid Student Referrals.
 						</p>
 						<ul class="actions special">
-							<li><a href="https://goo.gl/forms/ntrSOfimwEHnMgRz2" target="_blank" class="button">Submit</a></li>
+							<li><a href="https://goo.gl/forms/ntrSOfimwEHnMgRz2" target="_blank" class="button" 
+								onclick="trackOutboundLink('https://goo.gl/forms/ntrSOfimwEHnMgRz2'); return false;">Submit</a></li>
 						</ul>
 					</section>
 				</div>
@@ -136,8 +165,10 @@
 					</header>
 
 					<ul class="icons">
-						<li><a href="mailto:info@pairing4good.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.facebook.com/Pairing4Good-Coding-Academy-712435522445920" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="mailto:info@pairing4good.com" target="_blank" class="icon fa-envelope" 
+							onclick="trackOutboundLink('mailto:info@pairing4good.com'); return false;"><span class="label">Email</span></a></li>
+						<li><a href="https://www.facebook.com/Pairing4Good-Coding-Academy-712435522445920" target="_blank" class="icon fa-facebook" 
+							onclick="trackOutboundLink('https://www.facebook.com/Pairing4Good-Coding-Academy-712435522445920'); return false;" ><span class="label">Facebook</span></a></li>
 						<!--
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
